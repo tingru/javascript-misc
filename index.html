@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>More JavaScript and Forms</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/main.css"/>
+
+    </head>
+    <body>
+        <main class="container">
+            <header class="page-header">
+                <h1>Age Calculator</h1>
+                <p class="lead">Let me calculate your current age given your birthdate</p>
+            </header>
+
+            <form id="age-form" role="form">
+                <div class="form-group">
+                    <label for="name-input" class="required-field">Your Name</label>
+                    <input type="text" id="name-input" name="name" class="form-control" placeholder="your name" autofocus/>
+                </div>
+
+                <div class="form-group">
+                    <label for="birthdate-input" class="required-field">Your Birthdate</label>
+                    <input type="date" id="birthdate-input" name="birthdate" class="form-control" placeholder="your birthdate"/>
+                </div>
+
+                <div class="form-group text-right">
+                    <button type="button" class="btn btn-default" id="exit-button">Get Me Out of Here!</button>
+                    <button type="reset" class="btn btn-warning">Start Over</button>
+                    <button type="submit" class="btn btn-success">Calculate My Age</button>
+                </div>
+            </form>
+
+            <p id="age-message" class="lead"></p>
+
+        </main>
+
+        <script src="js/app.js"></script>
+    </body>
+</html>

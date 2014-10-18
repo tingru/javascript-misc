@@ -1,0 +1,17 @@
+/* extra styles for our page */
+
+@import url(http://fonts.googleapis.com/css?family=Oxygen:400,300);
+
+body {
+    font-family: 'Oxygen', 'Helvetica Neue', 'Helvetica', sans-serif;
+    font-size: 18px;
+}
+
+.required-field:after {
+    content: ' *';
+    color: #FF0000;
+}
+
+.invalid-field {
+    border: 1px solid #FF0000;
+}
