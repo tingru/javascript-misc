@@ -43,7 +43,6 @@ function onSubmit(eventObject) {
 
     //display the name and age
 
-
     //if the event object has a method called preventDefault,
     //call it to stop the browser from submitting the form
     //this method is now part of the standard, but it's new, so older browsers
@@ -70,6 +69,7 @@ function onSubmit(eventObject) {
  *   age in years [number]
  */
 function calculateAge(dob) {
+    //calculate the person's age based on the date-of-birth
 
 } //calculateAge()
 
@@ -81,6 +81,7 @@ function calculateAge(dob) {
  *   age - [number or string] age of person
  * */
 function displayAge(name, age) {
+    //use displayMessage() to display the name and age
 
 } //displayAge()
 
@@ -91,6 +92,17 @@ function displayAge(name, age) {
  *   error - [object or string] error to display
  * */
 function displayError(error) {
+    //use displayMessage to display the error
 
 } //displayError()
 
+/* displayMessage()
+ * Displays a message in the #age-message element, optionally setting a style class
+ *
+ * parameters:
+ *   message - [string] message to display
+ *   isError - [boolean, default=false] set to true if this is an error message
+ * */
+function displayMessage(message, isError) {
+
+} //displayMessage()
